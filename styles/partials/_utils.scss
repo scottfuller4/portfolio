@@ -1,0 +1,16 @@
+$headingFont: 'Playfair Display', serif;
+$bodyFont: 'Montserrat', sans-serif;
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: $bodyFont;
+}
+
+.wrapper {
+    max-width: 1280px;
+    width: 85%;
+}
