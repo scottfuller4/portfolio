@@ -1,5 +1,5 @@
 $headingFont: 'Playfair Display', serif;
-$bodyFont: 'Montserrat', sans-serif;
+$bodyFont: 'Heebo', sans-serif;
 
 html {
     font-size: 62.5%;
@@ -10,7 +10,36 @@ body {
     font-family: $bodyFont;
 }
 
+section {
+    margin: 100px 0;
+}
+
 .wrapper {
     max-width: 1280px;
     width: 85%;
+    margin: 0 auto;
+}
+
+// Heading styles
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+h1, h3 {
+    font-family: $bodyFont;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    li {
+        text-decoration: none;
+        color: black;
+    }
 }
