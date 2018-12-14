@@ -1,0 +1,16 @@
+.project {
+    display: flex;
+    margin: 100px 0;
+    .projectImage {
+        width: 50%;
+        background: $accentColor;
+    }
+    .projectContent {
+        width: 50%;
+        padding: 0 50px 50px 50px;
+    }
+}
+
+.project:nth-child(even) {
+    text-align: right;
+}

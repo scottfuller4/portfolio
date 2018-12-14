@@ -1,5 +1,6 @@
 $headingFont: 'Playfair Display', serif;
 $bodyFont: 'Heebo', sans-serif;
+$accentColor: #dae0ed;
 
 html {
     font-size: 62.5%;
@@ -27,11 +28,26 @@ h1, h2, h3, h4 {
 
 h1, h3 {
     font-family: $bodyFont;
-    text-transform: uppercase;
+    // text-transform: uppercase;
+}
+
+h2 {
+    font-family: $headingFont;
+    font-size: 9rem;
+    // opacity: 0.5;
 }
 
 h3 {
+    font-size: 3rem;
+    font-family: $headingFont;
+    text-transform: capitalize;
+}
+
+h4 {
     font-size: 1.6rem;
+    font-family: $bodyFont;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
 }
 
 ul {

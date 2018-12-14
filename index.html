@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.4.1/css/all.css' integrity='sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz'
         crossorigin='anonymous'>
-    <link href="https://fonts.googleapis.com/css?family=Heebo|Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Heebo|Playfair+Display:900" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Scott Fuller</title>
 </head>
@@ -26,106 +27,180 @@
                     <img src="./styles/assets/arrow.svg" alt="">
                     <ul>
                         <li>
-                            <a href="https://linkedin.com/in/scott-fuller-086aa362">
+                            <a href="https://linkedin.com/in/scott-fuller-086aa362" target="_blank">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://github.com/scottfuller4">
+                            <a href="https://github.com/scottfuller4" target="_blank">
                                 <i class="fab fa-github"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/scott_fuller">
+                            <a href="https://twitter.com/scott_fuller" target="_blank">
                                 <i class="fab fa-twitter"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/scotti.boi/?hl=en">
+                            <a href="https://www.instagram.com/scotti.boi/?hl=en" target="_blank">
                                 <i class="fab fa-instagram"></i>
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
+            <div class="whiteSpace"></div>
         </div>
     </header>
     <main>
         <section class="about">
             <div class="wrapper">
-                <p>Hey, hi, hello! My name is Scott and I’m a Front-End Web Developer from Toronto. I’m a
-                    quick-thinking problem solver
-                    who loves challenges and creative thinking. I got into the world of web development from my
-                    previous career in
-                    adventure travel, and found a passion in making the internet functional, beautiful, and user
-                    friendly. When I’m not
-                    behind my computer you can find me eating my way through the city, binge-watching reality TV, or on
-                    a plane to some
-                    far-away land.</p>
+                <h2>About</h2>
+                <div class="aboutContainer">
+                    <div class="aboutImage">
+                        <img src="./styles/assets/sfuller.jpg" alt="">
+                    </div>
+                    <div class="aboutContent">
+                        <h4>Hey / hi / hello!</h4>
+                        <p>My name is Scott and I’m a Front-End Web Developer from Toronto. I’m a
+                            quick-thinking problem solver
+                            who loves challenges and creative thinking. I got into the world of web development from my
+                            previous career in
+                            adventure travel, and found a passion in making the internet functional, beautiful, and
+                            user
+                            friendly. When I’m not
+                            behind my computer you can find me eating my way through the city, binge-watching reality
+                            TV,
+                            or on
+                            a plane to some
+                            far-away land.</p>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="portfolio">
             <div class="wrapper">
                 <div class="projectContainer">
-                    <div class="project project1">
-                        <img src="" alt="">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio necessitatibus modi
-                            repellendus voluptates. Accusantium pariatur cumque quisquam voluptatibus, dolor vero
-                            beatae in, non tempora corrupti accusamus ea iure, soluta repellendus explicabo sint
-                            cupiditate ducimus? Natus reprehenderit optio molestias! Corrupti sit et earum
-                            consequuntur, debitis reprehenderit tempore quaerat delectus laboriosam illo.</p>
+                    <div class="project project1" data-aos="fade-left" data-aos-duration="600">
+                        <div class="projectImage">
+                            <img src="" alt="">
+                        </div>
+                        <div class="projectContent">
+                            <h3>Radflix</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio necessitatibus modi
+                                repellendus voluptates. Accusantium pariatur cumque quisquam voluptatibus, dolor vero
+                                beatae in, non tempora corrupti accusamus ea iure, soluta repellendus explicabo sint
+                                cupiditate ducimus? Natus reprehenderit optio molestias! Corrupti sit et earum
+                                consequuntur, debitis reprehenderit tempore quaerat delectus laboriosam illo.</p>
+                        </div>
                     </div>
-                    <div class="project project2">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, illo quod. Alias, ipsa! Hic qui
-                            debitis magnam, eligendi sequi similique quibusdam minus officia accusamus vero magni
-                            doloremque reiciendis, repellendus quidem reprehenderit maxime quaerat minima cum at
-                            dignissimos laudantium. Repellat iusto similique commodi nihil perferendis praesentium.
-                            Optio maxime illo incidunt sunt.</p>
-                        <img src="" alt="">
+                    <div class="project project2" data-aos="fade-right" data-aos-duration="600">
+                        <div class="projectContent">
+                            <h3>Strain Search</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, illo quod. Alias, ipsa! Hic
+                                qui
+                                debitis magnam, eligendi sequi similique quibusdam minus officia accusamus vero magni
+                                doloremque reiciendis, repellendus quidem reprehenderit maxime quaerat minima cum at
+                                dignissimos laudantium. Repellat iusto similique commodi nihil perferendis praesentium.
+                                Optio maxime illo incidunt sunt.</p>
+                        </div>
+                        <div class="projectImage">
+                            <img src="" alt="">
+                        </div>
                     </div>
-                    <div class="project project3">
-                        <img src="" alt="">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, iusto veritatis deleniti
-                            fuga soluta incidunt eum nihil qui rem error accusantium, voluptatem laudantium dolor ullam
-                            beatae odit vero, voluptate nam in eaque modi quisquam doloremque! Explicabo quis libero,
-                            quo dignissimos ab iusto nam doloribus? Rerum perspiciatis aut modi officiis autem?</p>
+                    <div class="project project3" data-aos="fade-left" data-aos-duration="600">
+                        <div class="projectImage">
+                            <img src="" alt="">
+                        </div>
+                        <div class="projectContent">
+                            <h3>Bomb dot com</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, iusto veritatis deleniti
+                                fuga soluta incidunt eum nihil qui rem error accusantium, voluptatem laudantium dolor
+                                ullam
+                                beatae odit vero, voluptate nam in eaque modi quisquam doloremque! Explicabo quis
+                                libero,
+                                quo dignissimos ab iusto nam doloribus? Rerum perspiciatis aut modi officiis autem?</p>
+                        </div>
                     </div>
-                    <div class="project project4">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis minus omnis, sint officia
-                            doloremque perferendis et accusantium eveniet soluta sed cupiditate. Veniam et quas atque
-                            rem blanditiis cupiditate perferendis repellendus facere necessitatibus libero. Dignissimos
-                            inventore tempora natus earum sint magnam ducimus deserunt molestias est aperiam
-                            asperiores, repellat doloribus eligendi ab.</p>
-                        <img src="" alt="">
+                    <div class="project project4" data-aos="fade-right" data-aos-duration="600">
+                        <div class="projectContent">
+                            <h3>Thank u next</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis minus omnis, sint
+                                officia
+                                doloremque perferendis et accusantium eveniet soluta sed cupiditate. Veniam et quas
+                                atque
+                                rem blanditiis cupiditate perferendis repellendus facere necessitatibus libero.
+                                Dignissimos
+                                inventore tempora natus earum sint magnam ducimus deserunt molestias est aperiam
+                                asperiores, repellat doloribus eligendi ab.</p>
+                        </div>
+                        <div class="projectImage">
+                            <img src="" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="skills">
             <div class="wrapper">
+                <h2>Skills</h2>
                 <ul class="skillsContainer">
-                    <li><i class="fab fa-html5"></i></li>
-                    <li><i class="fab fa-css3-alt"></i></li>
-                    <li><i class="fab fa-js"></i></li>
-                    <li><i class="fab fa-react"></i></li>
-                    <li><i class="fab fa-sass"></i></li>
-                    <li><i class="fab fa-github"></i></li>
-                    <!-- <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li> -->
+                    <li>
+                        <i class="fab fa-html5"></i>
+                        <h4>html5</h4>
+                    </li>
+                    <li>
+                        <i class="fab fa-css3-alt"></i>
+                        <h4>css3</h4>
+                    </li>
+                    <li>
+                        <i class="fab fa-js"></i>
+                        <h4>es6</h4>
+                    </li>
+                    <li>
+                        <img src="./styles/assets/jquery.svg" alt="">
+                        <h4>jquery</h4>
+                    </li>
+                    <li>
+                        <i class="fab fa-react"></i>
+                        <h4>react</h4>
+                    </li>
+                    <li>
+                        <i class="fab fa-sass"></i>
+                        <h4>sass</h4>
+                    </li>
+                    <li>
+                        <i class="fab fa-github"></i>
+                        <h4>git</h4>
+                    </li>
+                    <li>
+                        <img src="./styles/assets/vscode.svg" alt="">
+                        <h4>vscode</h4>
+                    </li>
+                    <li>
+                        <img src="./styles/assets/firebase.svg" alt="">
+                        <h4>firebase</h4>
+                    </li>
                 </ul>
             </div>
         </section>
         <section class="contact">
             <div class="wrapper">
-                <h2>Please hire me</h2>
+                <h2>I'm currently looking for a new opportunity, so if you'd like to chat please get in touch!</h2>
             </div>
         </section>
     </main>
     <footer>
 
     </footer>
+
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
+        crossorigin='anonymous'></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>

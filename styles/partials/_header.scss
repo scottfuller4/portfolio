@@ -1,27 +1,28 @@
 header {
-    height: 100vh;
+    height: 110vh;
     background-image: url(./assets/header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 20px;
+    position: relative;
     h1 {
         font-family: $bodyFont;
         text-transform: uppercase;
-        font-size: 2rem;
+        font-size: 8rem;
         letter-spacing: 0.8rem;
-        // padding-top: 20px;
         text-align: center;
+        padding-top: 70px;
     }
 }
 
-.headerContainer {
-    position: relative;
-}
+// .headerContainer {
+//     position: relative;
+// }
 
 .nav {
     position: fixed;
     text-align: right;
-    right: 7.5%;
+    right: 5%;
     top: 22px;
     img {
         width: 25px;
@@ -39,6 +40,8 @@ header {
         left: -68px;
         font-size: 1.4rem;
         letter-spacing: 0.8rem;
+        font-family: $bodyFont;
+        text-transform: uppercase;
     }
 }
 
@@ -59,9 +62,22 @@ header {
         a {
             text-decoration: none;
             color: black;
+            transition: 0.2s all;
         }
         i {
             font-size: 1.4rem;
         }
     }
+}
+
+.socialLinks a:hover {
+    color: #FA7268;
+}
+
+.whiteSpace {
+    height: 50px;
+    width: 85%;
+    position: absolute;
+    bottom: 0;
+    background: white;
 }

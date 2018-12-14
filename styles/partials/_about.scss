@@ -1,6 +1,36 @@
-// .about {
-//     position: relative;
-//     top: -50px;
-//     z-index: 2;
-//     background: white;
-// }
+.about {
+    margin: 0 50px 0 50px;
+    h2 {
+        position: relative;
+        bottom: 20px;
+        right: 30px;
+        text-align: right;
+    }
+}
+
+.aboutContainer {
+    display: flex;
+    position: relative;
+    bottom: 50px;
+    left: 20px;
+}
+
+.aboutImage {
+    width: 60%;
+    img {
+        max-width: 100%;
+        display: block;
+    }
+}
+
+.aboutContent {
+    width: 50%;
+    background: $accentColor;
+    position: relative;
+    top: 50px;
+    right: 100px;
+    padding: 50px;
+    p {
+        line-height: 2;
+    }
+}
