@@ -14,12 +14,21 @@
 </head>
 
 <body>
-    <header>
+    <header id="home">
         <div class="wrapper headerContainer">
             <h1>Scott Fuller</h1>
             <div class="nav">
-                <img src="./styles/assets/hamburger.svg" alt="">
-                <!-- Arrow by Sergey Demushkin from the Noun Project -->
+                <div class="hamburger">
+                    <img src="./styles/assets/hamburger.svg" alt="">
+                    <!-- Arrow by Sergey Demushkin from the Noun Project -->
+                </div>
+                <ul class="pageNav menuHide">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
             <div class="social">
                 <h3>Follow me</h3>
@@ -53,7 +62,7 @@
         </div>
     </header>
     <main>
-        <section class="about">
+        <section class="about" id="about">
             <div class="wrapper">
                 <h2>About</h2>
                 <div class="aboutContainer">
@@ -78,7 +87,7 @@
                 </div>
             </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="wrapper">
                 <div class="projectContainer">
                     <div class="project project1" data-aos="fade-left" data-aos-duration="600">
@@ -141,7 +150,7 @@
                 </div>
             </div>
         </section>
-        <section class="skills">
+        <section class="skills" id="skills">
             <div class="wrapper">
                 <h2>Skills</h2>
                 <ul class="skillsContainer">
@@ -184,9 +193,32 @@
                 </ul>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="wrapper">
                 <h2>I'm currently looking for a new opportunity, so if you'd like to chat please get in touch!</h2>
+                <div class="contactLink">
+                    <img src="./styles/assets/rightArrow.svg" alt="" id="rotate">
+                    <!-- Arrow by Sergey Demushkin from the Noun Project -->
+                    <button class="button contactButton">Contact me</button>
+                </div>
+                <div class="contactForm menuHide">
+                    <form action="">
+                        <label for="name">Your name</label>
+                        <input type="text" required="true" id="name">
+
+                        <label for="email">Your email</label>
+                        <input type="email" required="true" id="email">
+
+                        <label for="subject">Subject</label>
+                        <input type="text" required="true" id="subject">
+
+                        <label for="message">Your message</label>
+                        <!-- <textarea name="message" id="message" width="50%" rows="10"></textarea> -->
+                        <input type="text" required="true" id="message">
+
+                        <button class="button">Submit</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
@@ -200,7 +232,8 @@
     <script>
         AOS.init();
     </script>
-    <script src="scripts/script.js"></script>
+    <script type="text/javascript" src="http://beneposto.pl/jqueryrotate/js/jQueryRotateCompressed.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>

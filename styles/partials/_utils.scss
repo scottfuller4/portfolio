@@ -1,9 +1,11 @@
 $headingFont: 'Playfair Display', serif;
 $bodyFont: 'Heebo', sans-serif;
 $accentColor: #dae0ed;
+$hoverColor: #FA7268;
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -58,4 +60,18 @@ ul {
         text-decoration: none;
         color: black;
     }
+}
+
+.button {
+    width: 25%;
+    border: none;
+    background: $accentColor;
+    padding: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    transition: 0.3s all;
+}
+
+.button:hover {
+    background-color: $hoverColor;
 }

@@ -71,7 +71,7 @@ header {
 }
 
 .socialLinks a:hover {
-    color: #FA7268;
+    color: $hoverColor;
 }
 
 .whiteSpace {
@@ -80,4 +80,33 @@ header {
     position: absolute;
     bottom: 0;
     background: white;
+}
+
+//Hamburger menu
+.hamburger {
+    cursor: pointer;
+}
+
+.pageNav {
+    background: none;
+    width: 150px;
+    z-index: 100;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    li {
+        padding: 15px 0;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        transition: 0.2s all;
+    }
+}
+
+.pageNav a:hover {
+    color: $hoverColor;
+}
+
+.menuHide {
+    display: none;
 }
