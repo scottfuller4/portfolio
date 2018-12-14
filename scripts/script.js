@@ -7,6 +7,7 @@ $(function () {
 App.init = function () {
     App.menu();
     App.contact();
+    App.scroll();
 };
 
 App.menu = function () {
@@ -25,8 +26,16 @@ App.contact = function () {
     })
 }
 
-// $("html, body").animate(
-//     {
-//         scrollTop: $(`#qa${bombApp.questionCount}`).offset().top
-//     },
-//     1000);
+App.scroll = function () {
+    $("a").on('click', function (e) {
+        if (this.hash !== "") {
+            e.preventDefault();
+            let hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 1000, function () {
+                window.location.hash = hash;
+            });
+        }
+    });
+}

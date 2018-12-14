@@ -133,8 +133,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box; }
 
 html {
-  font-size: 62.5%;
-  scroll-behavior: smooth; }
+  font-size: 62.5%; }
 
 body {
   font-size: 1.6rem;
@@ -369,6 +368,15 @@ header {
     .skillsContainer li img {
       width: 6rem;
       margin: 20px auto; }
+
+footer {
+  background: #dae0ed; }
+  footer p {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem; }
 
 .contact {
   margin-bottom: 0; }
