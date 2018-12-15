@@ -137,7 +137,8 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Heebo", sans-serif; }
+  font-family: "Heebo", sans-serif;
+  overflow-x: hidden; }
 
 section {
   margin: 100px 0; }
@@ -190,6 +191,9 @@ ul {
 .button:hover {
   background-color: #FA7268; }
 
+.button:focus {
+  border: 1px solid #FA7268; }
+
 .hidden {
   display: none; }
 
@@ -212,7 +216,8 @@ header {
   position: fixed;
   text-align: right;
   right: 5%;
-  top: 22px; }
+  top: 22px;
+  z-index: 100; }
   .nav img {
     width: 25px; }
 
@@ -253,16 +258,9 @@ header {
     .socialLinks ul li i {
       font-size: 1.4rem; }
 
-.socialLinks a:hover {
+.socialLinks a:hover,
+.socialLinks a:focus {
   color: #FA7268; }
-
-.whiteSpace {
-  height: 50px;
-  width: 85%;
-  position: absolute;
-  bottom: 0;
-  background: white;
-  z-index: 10; }
 
 .hamburgerNav {
   cursor: pointer; }
@@ -289,7 +287,7 @@ header {
   display: none; }
 
 .about {
-  margin: 0 50px 0 50px; }
+  margin: 0; }
   .about h2 {
     position: relative;
     bottom: 20px;
@@ -302,7 +300,8 @@ header {
   display: flex;
   position: relative;
   bottom: 50px;
-  left: 20px; }
+  left: 20px;
+  margin: 0 50px; }
 
 .aboutImage {
   width: 60%; }
@@ -319,6 +318,18 @@ header {
   padding: 50px; }
   .aboutContent p {
     line-height: 2; }
+
+.whiteSpace {
+  height: 50px;
+  width: 100%;
+  position: relative;
+  bottom: 50px;
+  background: white;
+  z-index: 10; }
+
+.projectContainer h2 {
+  padding: 0 50px;
+  text-transform: capitalize; }
 
 .project {
   display: -webkit-box;
@@ -339,12 +350,15 @@ header {
       line-height: 2;
       margin-bottom: 20px; }
 
-.project:nth-child(even) {
+.project:nth-child(odd) {
   text-align: right; }
-  .project:nth-child(even) .projectButtons {
+  .project:nth-child(odd) .projectButtons {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end; }
+
+.project1 {
+  margin-top: 50px; }
 
 .projectButtons {
   display: -webkit-box;
@@ -444,16 +458,34 @@ footer p {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-    .contactForm form input {
+    .contactForm form input, .contactForm form textarea {
       margin: 10px 0 20px 0;
-      width: 50%; }
+      width: 600px;
+      border: 1px solid grey;
+      padding: 5px; }
     .contactForm form label {
       font-family: "Heebo", sans-serif;
       text-transform: uppercase;
       letter-spacing: 0.5rem; }
 
-.contactForm input:focus {
+.contactForm input:focus, .contactForm textarea:focus {
   border: 1px solid #FA7268; }
 
 #message {
   height: 200px; }
+
+@media (max-width: 1100px) {
+  .contact h2 {
+    font-size: 6rem; }
+  .contactLink {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+    .contactLink img {
+      padding-top: 0; }
+    .contactLink button {
+      margin-top: 37px; } }
+
+@media (max-width: 1000px) {
+  section {
+    margin: 50px 0; } }

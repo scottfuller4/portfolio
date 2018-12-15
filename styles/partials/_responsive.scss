@@ -1,0 +1,22 @@
+@media (max-width: 1100px) {
+    .contact h2 {
+        font-size: 6rem;
+    }
+
+    .contactLink {
+        align-items: flex-start;
+        img {
+            padding-top: 0;
+            // height: 50px;
+        }
+        button {
+            margin-top: 37px;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    section {
+        margin: 50px 0;
+    }
+}

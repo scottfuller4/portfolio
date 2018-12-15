@@ -10,6 +10,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: $bodyFont;
+    overflow-x: hidden;
 }
 
 section {
@@ -73,6 +74,10 @@ ul {
 
 .button:hover {
     background-color: $hoverColor;
+}
+
+.button:focus {
+    border: 1px solid $hoverColor;
 }
 
 .hidden {

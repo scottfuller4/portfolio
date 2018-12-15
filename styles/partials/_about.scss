@@ -1,5 +1,5 @@
 .about {
-    margin: 0 50px 0 50px;
+    margin: 0;
     h2 {
         position: relative;
         bottom: 20px;
@@ -13,6 +13,7 @@
     position: relative;
     bottom: 50px;
     left: 20px;
+    margin: 0 50px;
 }
 
 .aboutImage {
@@ -33,4 +34,13 @@
     p {
         line-height: 2;
     }
+}
+
+.whiteSpace {
+    height: 50px;
+    width: 100%;
+    position: relative;
+    bottom: 50px;
+    background: white;
+    z-index: 10;
 }

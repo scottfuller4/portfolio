@@ -1,3 +1,8 @@
+.projectContainer h2 {
+    padding: 0 50px;
+    text-transform: capitalize;
+}
+
 .project {
     display: flex;
     margin: 100px 0;
@@ -21,11 +26,15 @@
     }
 }
 
-.project:nth-child(even) {
+.project:nth-child(odd) {
     text-align: right;
     .projectButtons {
         justify-content: flex-end;
     }
+}
+
+.project1 {
+    margin-top: 50px;
 }
 
 .projectButtons {

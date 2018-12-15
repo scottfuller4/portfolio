@@ -60,12 +60,12 @@
                     </ul>
                 </div>
             </div>
-            <div class="whiteSpace"></div>
         </div>
     </header>
     <main>
         <section class="about" id="about">
             <div class="wrapper">
+                <div class="whiteSpace"></div>
                 <h2>About</h2>
                 <div class="aboutContainer">
                     <div class="aboutImage">
@@ -92,6 +92,7 @@
         <section class="portfolio" id="portfolio">
             <div class="wrapper">
                 <div class="projectContainer">
+                    <h2>Recent projects</h2>
                     <div class="project project1" data-aos="fade-left" data-aos-duration="600">
                         <div class="projectImage">
                             <img src="./styles/assets/radflix.png" alt="">
@@ -103,8 +104,8 @@
                                 collaborate and store a list of their favourite movies. Made with Andy Ng and Matt
                                 Vinall.</p>
                             <div class="projectButtons">
-                                <a href="" class="button">view live</a>
-                                <a href="" class="button">github</a>
+                                <a href="http://scottfuller.ca/radflix/" class="button" target="_blank">view live</a>
+                                <a href="https://github.com/scottfuller4/project6" class="button" target="_blank">github</a>
                             </div>
                         </div>
                     </div>
@@ -117,8 +118,8 @@
                                 along
                                 with Firebase to allow users to save a list of their favourite strains.</p>
                             <div class="projectButtons">
-                                <a href="" class="button">view live</a>
-                                <a href="" class="button">github</a>
+                                <a href="http://scottfuller.ca/strainsearch/" class="button" target="_blank">view live</a>
+                                <a href="https://github.com/scottfuller4/scott_fuller_project5" class="button" target="_blank">github</a>
                             </div>
                         </div>
                         <div class="projectImage">
@@ -137,25 +138,24 @@
                                 6 trivia questions in a race to defuse the bomb. Made in collaboration with Nataliya
                                 Ioffe.</p>
                             <div class="projectButtons">
-                                <a href="" class="button">view live</a>
-                                <a href="" class="button">github</a>
+                                <a href="http://scottfuller.ca/bombdotcom/" class="button" target="_blank">view live</a>
+                                <a href="https://github.com/scottfuller4/project4_nataliya_scott" class="button" target="_blank">github</a>
                             </div>
                         </div>
                     </div>
                     <div class="project project4" data-aos="fade-right" data-aos-duration="600">
                         <div class="projectContent">
-                            <h3>Thank u next</h3>
+                            <h3>Thank u, next</h3>
                             <h4>Javascript / jquery / scss / html </h4>
                             <p>A breakup text generator inspired by "Thank U, Next", by Ariana Grande. Users answer a
                                 variety of questions to receive a custom breakup text.</p>
                             <div class="projectButtons">
-                                <a href="" class="button">view live</a>
-                                <a href="" class="button">github</a>
+                                <a href="http://scottfuller.ca/thankunext/" class="button" target="_blank">view live</a>
+                                <a href="https://github.com/scottfuller4/scott_fuller_project3" class="button" target="_blank">github</a>
                             </div>
                         </div>
                         <div class="projectImage">
                             <img src="./styles/assets/thankunext.png" alt="">
-                            <!-- <img src="./styles/assets/thankunextipad.png" alt=""> -->
                         </div>
                     </div>
                 </div>
@@ -213,19 +213,19 @@
                     <button class="button contactButton">Contact me</button>
                 </div>
                 <div class="contactForm menuHide">
-                    <form action="">
+                    <form action="http://www.focuspocus.io/magic/scottfuller4@gmail.com" method="POST">
                         <label for="name">Name</label>
-                        <input type="text" required="true" id="name">
+                        <input type="text" required="true" id="name" name="name">
 
                         <label for="email">Email</label>
-                        <input type="email" required="true" id="email">
+                        <input type="email" required="true" id="email" name="email">
 
                         <label for="subject">Subject</label>
-                        <input type="text" required="true" id="subject">
+                        <input type="text" required="true" id="subject" name="subject">
 
                         <label for="message">Message</label>
-                        <!-- <textarea name="message" id="message" width="50%" rows="10"></textarea> -->
-                        <input type="text" required="true" id="message">
+                        <textarea name="message" id="message" cols="30" rows="10" name="message" required="true"></textarea>
+                        <!-- <input type="text" required="true" id="message"> -->
 
                         <button class="button">Submit</button>
                     </form>
