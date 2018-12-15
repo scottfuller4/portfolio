@@ -11,8 +11,10 @@ App.init = function () {
 };
 
 App.menu = function () {
-    $(".hamburger").on("click", function () {
+    $(".hamburgerNav").on("click", function () {
         $(".pageNav").toggleClass("menuHide");
+        $(".hamburger").toggleClass("hidden");
+        $(".close").toggleClass("hidden");
     })
 }
 

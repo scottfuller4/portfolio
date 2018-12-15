@@ -18,9 +18,11 @@
         <div class="wrapper headerContainer">
             <h1>Scott Fuller</h1>
             <div class="nav">
-                <div class="hamburger">
-                    <img src="./styles/assets/hamburger.svg" alt="">
+                <div class="hamburgerNav">
+                    <img src="./styles/assets/hamburger.svg" alt="" class="hamburger">
                     <!-- Arrow by Sergey Demushkin from the Noun Project -->
+                    <img src="./styles/assets/close.svg" alt="" class="close hidden">
+                    <!-- Close by Morten Halvorsen from the Noun Project -->
                 </div>
                 <ul class="pageNav menuHide">
                     <li><a href="#home">Home</a></li>
@@ -92,59 +94,68 @@
                 <div class="projectContainer">
                     <div class="project project1" data-aos="fade-left" data-aos-duration="600">
                         <div class="projectImage">
-                            <img src="" alt="">
+                            <img src="./styles/assets/radflix.png" alt="">
                         </div>
                         <div class="projectContent">
                             <h3>Radflix</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio necessitatibus modi
-                                repellendus voluptates. Accusantium pariatur cumque quisquam voluptatibus, dolor vero
-                                beatae in, non tempora corrupti accusamus ea iure, soluta repellendus explicabo sint
-                                cupiditate ducimus? Natus reprehenderit optio molestias! Corrupti sit et earum
-                                consequuntur, debitis reprehenderit tempore quaerat delectus laboriosam illo.</p>
+                            <h4>react / API / firebase / scss</h4>
+                            <p>A react application using the MovieDB API that allows users to create custom groups to
+                                collaborate and store a list of their favourite movies. Made with Andy Ng and Matt
+                                Vinall.</p>
+                            <div class="projectButtons">
+                                <a href="" class="button">view live</a>
+                                <a href="" class="button">github</a>
+                            </div>
                         </div>
                     </div>
                     <div class="project project2" data-aos="fade-right" data-aos-duration="600">
                         <div class="projectContent">
                             <h3>Strain Search</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, illo quod. Alias, ipsa! Hic
-                                qui
-                                debitis magnam, eligendi sequi similique quibusdam minus officia accusamus vero magni
-                                doloremque reiciendis, repellendus quidem reprehenderit maxime quaerat minima cum at
-                                dignissimos laudantium. Repellat iusto similique commodi nihil perferendis praesentium.
-                                Optio maxime illo incidunt sunt.</p>
+                            <h4>react / api / firebase / CSS</h4>
+                            <p>A react application that allows users to discover cannabis strains by getting
+                                recommendations based on their inputted desired effects. Powered by The Strain API,
+                                along
+                                with Firebase to allow users to save a list of their favourite strains.</p>
+                            <div class="projectButtons">
+                                <a href="" class="button">view live</a>
+                                <a href="" class="button">github</a>
+                            </div>
                         </div>
                         <div class="projectImage">
-                            <img src="" alt="">
+                            <img src="./styles/assets/strainsearch.png" alt="">
                         </div>
                     </div>
                     <div class="project project3" data-aos="fade-left" data-aos-duration="600">
                         <div class="projectImage">
-                            <img src="" alt="">
+                            <img src="./styles/assets/bombdotcom.png" alt="">
                         </div>
                         <div class="projectContent">
                             <h3>Bomb dot com</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, iusto veritatis deleniti
-                                fuga soluta incidunt eum nihil qui rem error accusantium, voluptatem laudantium dolor
-                                ullam
-                                beatae odit vero, voluptate nam in eaque modi quisquam doloremque! Explicabo quis
-                                libero,
-                                quo dignissimos ab iusto nam doloribus? Rerum perspiciatis aut modi officiis autem?</p>
+                            <h4>Javascript / jquery / api / scss / html </h4>
+                            <p>A trivia game using questions from the Open Trivia DB API. Players have 60 seconds to
+                                answer
+                                6 trivia questions in a race to defuse the bomb. Made in collaboration with Nataliya
+                                Ioffe.</p>
+                            <div class="projectButtons">
+                                <a href="" class="button">view live</a>
+                                <a href="" class="button">github</a>
+                            </div>
                         </div>
                     </div>
                     <div class="project project4" data-aos="fade-right" data-aos-duration="600">
                         <div class="projectContent">
                             <h3>Thank u next</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis minus omnis, sint
-                                officia
-                                doloremque perferendis et accusantium eveniet soluta sed cupiditate. Veniam et quas
-                                atque
-                                rem blanditiis cupiditate perferendis repellendus facere necessitatibus libero.
-                                Dignissimos
-                                inventore tempora natus earum sint magnam ducimus deserunt molestias est aperiam
-                                asperiores, repellat doloribus eligendi ab.</p>
+                            <h4>Javascript / jquery / scss / html </h4>
+                            <p>A breakup text generator inspired by "Thank U, Next", by Ariana Grande. Users answer a
+                                variety of questions to receive a custom breakup text.</p>
+                            <div class="projectButtons">
+                                <a href="" class="button">view live</a>
+                                <a href="" class="button">github</a>
+                            </div>
                         </div>
                         <div class="projectImage">
-                            <img src="" alt="">
+                            <img src="./styles/assets/thankunext.png" alt="">
+                            <!-- <img src="./styles/assets/thankunextipad.png" alt=""> -->
                         </div>
                     </div>
                 </div>
@@ -203,16 +214,16 @@
                 </div>
                 <div class="contactForm menuHide">
                     <form action="">
-                        <label for="name">Your name</label>
+                        <label for="name">Name</label>
                         <input type="text" required="true" id="name">
 
-                        <label for="email">Your email</label>
+                        <label for="email">Email</label>
                         <input type="email" required="true" id="email">
 
                         <label for="subject">Subject</label>
                         <input type="text" required="true" id="subject">
 
-                        <label for="message">Your message</label>
+                        <label for="message">Message</label>
                         <!-- <textarea name="message" id="message" width="50%" rows="10"></textarea> -->
                         <input type="text" required="true" id="message">
 

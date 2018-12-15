@@ -177,7 +177,7 @@ ul {
     color: black; }
 
 .button {
-  width: 25%;
+  width: 300px;
   border: none;
   background: #dae0ed;
   padding: 10px 0;
@@ -189,6 +189,9 @@ ul {
 
 .button:hover {
   background-color: #FA7268; }
+
+.hidden {
+  display: none; }
 
 header {
   height: 110vh;
@@ -258,9 +261,10 @@ header {
   width: 85%;
   position: absolute;
   bottom: 0;
-  background: white; }
+  background: white;
+  z-index: 10; }
 
-.hamburger {
+.hamburgerNav {
   cursor: pointer; }
 
 .pageNav {
@@ -322,14 +326,40 @@ header {
   display: flex;
   margin: 100px 0; }
   .project .projectImage {
-    width: 50%;
-    background: #dae0ed; }
+    width: 50%; }
+    .project .projectImage img {
+      max-width: 100%;
+      padding: 0 50px; }
   .project .projectContent {
     width: 50%;
     padding: 0 50px 50px 50px; }
+    .project .projectContent h3 {
+      margin-bottom: 20px; }
+    .project .projectContent p {
+      line-height: 2;
+      margin-bottom: 20px; }
 
 .project:nth-child(even) {
   text-align: right; }
+  .project:nth-child(even) .projectButtons {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+
+.projectButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.projectButtons a {
+  text-decoration: none;
+  color: black;
+  width: 200px;
+  display: block;
+  text-align: center; }
+
+.projectButtons a:first-child {
+  margin-right: 20px; }
 
 .skills {
   background: #dae0ed;
@@ -369,14 +399,12 @@ header {
       width: 6rem;
       margin: 20px auto; }
 
-footer {
-  background: #dae0ed; }
-  footer p {
-    margin: 0;
-    padding: 10px 0;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.3rem; }
+footer p {
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem; }
 
 .contact {
   margin-bottom: 0; }
