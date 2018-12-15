@@ -488,4 +488,49 @@ footer p {
 
 @media (max-width: 1000px) {
   section {
-    margin: 50px 0; } }
+    margin: 50px 0; }
+  .project {
+    margin: 50px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .project .projectContent {
+      width: 100%; }
+    .project .projectImage {
+      width: 100%;
+      margin-bottom: 20px; }
+    .project .projectButtons {
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end; }
+  .project:nth-child(odd) {
+    text-align: left;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse; } }
+
+@media (max-width: 850px) {
+  .contact h2 {
+    font-size: 4.5rem; }
+  .contactForm form input, .contactForm form textarea {
+    width: 100%; } }
+
+@media (max-width: 700px) {
+  h2 {
+    font-size: 6rem; }
+  .skills {
+    padding-bottom: 50px; }
+    .skills h2 {
+      bottom: 40px; } }
+
+@media (max-width: 600px) {
+  .project .projectButtons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .project .projectButtons a {
+      width: 100%;
+      margin-bottom: 20px; } }

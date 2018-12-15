@@ -19,4 +19,59 @@
     section {
         margin: 50px 0;
     }
+
+    .project {
+        margin: 50px 0;
+        flex-direction: column;
+        .projectContent {
+            width: 100%;
+        }
+        .projectImage {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .projectButtons {
+            justify-content: flex-end;
+        }
+    }
+
+    .project:nth-child(odd) {
+        text-align: left;
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 850px) {
+    .contact h2 {
+        font-size: 4.5rem;
+    }
+
+    .contactForm form {
+        input, textarea {
+            width: 100%;
+        }
+    } 
+}
+
+@media (max-width: 700px) {
+    h2 {
+        font-size: 6rem;
+    }
+
+    .skills {
+        padding-bottom: 50px;
+        h2 {
+            bottom: 40px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .project .projectButtons {
+        flex-direction: column;
+        a {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
 }
