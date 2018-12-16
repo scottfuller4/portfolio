@@ -19,17 +19,6 @@ header {
 //     position: relative;
 // }
 
-.nav {
-    position: fixed;
-    text-align: right;
-    right: 5%;
-    top: 22px;
-    z-index: 100;
-    img {
-        width: 25px;
-    }
-}
-
 .social {
     position: fixed;
     top: 25%;
@@ -78,24 +67,46 @@ header {
 
 
 //Hamburger menu
+.fixed {
+    position: fixed;
+    text-align: right;
+    right: 5%;
+    top: 22px;
+    z-index: 100;
+    background: none;
+    img {
+        width: 25px;
+    }
+}
+
 .hamburgerNav {
     cursor: pointer;
 }
 
 .pageNav {
     background: none;
-    width: 150px;
+    // width: 150px;
     z-index: 100;
     text-transform: uppercase;
     letter-spacing: 0.5rem;
     li {
-        padding: 15px 0;
+        padding: 15px 5px;
+        background: white;
+        opacity: 0.8;
+        border-bottom: 1px solid black;
     }
     a {
         text-decoration: none;
+        // padding: 50px;
+        padding: 15px 5px 15px 30px;
         color: black;
         transition: 0.2s all;
+        // border: 1px solid red;
     }
+}
+
+.pageNav li:last-child {
+    border-bottom: none;
 }
 
 .pageNav a:hover {

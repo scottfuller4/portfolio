@@ -5,12 +5,12 @@ $hoverColor: #FA7268;
 
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body {
     font-size: 1.6rem;
     font-family: $bodyFont;
-    overflow-x: hidden;
 }
 
 section {

@@ -2,12 +2,14 @@ const App = {};
 
 $(function () {
     App.init();
+    // $("#fixedNav").midnight();
 });
 
 App.init = function () {
     App.menu();
     App.contact();
     App.scroll();
+    App.midnight();
 };
 
 App.menu = function () {
@@ -40,4 +42,8 @@ App.scroll = function () {
             });
         }
     });
+}
+
+App.midnight = function () {
+    $("#fixedNav").midnight();
 }

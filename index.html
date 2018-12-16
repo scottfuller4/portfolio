@@ -17,7 +17,7 @@
     <header id="home">
         <div class="wrapper headerContainer">
             <h1>Scott Fuller</h1>
-            <div class="nav">
+            <nav class="fixed" id="fixedNav">
                 <div class="hamburgerNav">
                     <img src="./styles/assets/hamburger.svg" alt="" class="hamburger">
                     <!-- Arrow by Sergey Demushkin from the Noun Project -->
@@ -31,7 +31,7 @@
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-            </div>
+            </nav>
             <div class="social">
                 <h3>Follow me</h3>
                 <div class="socialLinks">
@@ -63,7 +63,7 @@
         </div>
     </header>
     <main>
-        <section class="about" id="about">
+        <section class="about" id="about" data-midnight="coral">
             <div class="wrapper">
                 <div class="whiteSpace wrapper"></div>
                 <h2>About</h2>
@@ -267,13 +267,17 @@
         </div>
     </footer>
 
+
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
         crossorigin='anonymous'></script>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+
     <script type="text/javascript" src="http://beneposto.pl/jqueryrotate/js/jQueryRotateCompressed.js"></script>
+
     <script src="./scripts/script.js"></script>
 </body>
 
