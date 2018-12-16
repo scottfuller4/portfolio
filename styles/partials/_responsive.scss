@@ -13,6 +13,23 @@
             margin-top: 37px;
         }
     }
+
+    .aboutContainer {
+        flex-direction: column;
+        position: static;
+    }
+
+    .aboutContent {
+        width: 80%;
+        top: -50px;
+        right: 0;
+        // position: static;
+        align-self: flex-end;
+    }
+
+    .portfolio {
+        margin-top: 0;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -44,6 +61,7 @@
 @media (max-width: 850px) {
     .contact h2 {
         font-size: 4.5rem;
+        line-height: 1.8;
     }
 
     .contactForm form {
@@ -53,15 +71,96 @@
     } 
 }
 
-@media (max-width: 700px) {
-    h2 {
+@media (max-width: 776px) {
+    header h1 {
         font-size: 6rem;
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        height: 97vh;
+    }
+
+    h2 {
+        font-size: 7rem;
+        padding: 0;
+    }
+
+    .nav {
+        right: 2%;
+    }
+
+    .social {
+        display: none;
     }
 
     .skills {
         padding-bottom: 50px;
         h2 {
             bottom: 40px;
+        }
+    }
+
+    .about h2 {
+        text-align: center;
+        margin-right: 0;
+        // position: relative;
+        // top: 30px;
+    }
+
+    .aboutContainer {
+        margin: 0;
+    }
+
+    .aboutImage {
+        width: 100%;
+    }
+
+    .aboutContent {
+        width: 100%;
+        position: static;
+        align-self: flex-end;
+        padding: 50px 0;
+        background: none;
+        h4 {
+            text-align: center;
+        }
+        // margin: 50px 0;
+    }
+
+    .project {
+        .projectImage {
+            img {
+                padding: 0;
+            }
+        }
+        .projectContent {
+            padding: 0 0 50px 0;
+        }
+    }
+    
+    .projectContainer h2 {
+        padding: 0;
+        text-align: center;
+    }
+
+    .contact h2 {
+        padding: 0;
+    }
+
+    footer {
+        background: $accentColor;
+    }
+
+    .hiddenFooter {
+        display: block;
+        h3 {
+            text-align: center;
+            padding-top: 10px;
+        }
+        .socialLinks {
+            margin: 10px 0;
         }
     }
 }
@@ -73,5 +172,51 @@
             width: 100%;
             margin-bottom: 20px;
         }
+    }
+
+    .skillsContainer li {
+        width: 50%;
+        i {
+            margin: 30px 0;
+        }
+    }
+
+    .contact h2 {
+        font-size: 3rem;
+        line-height: 2;
+    }
+
+    .contactLink {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 450px) {
+    header h1 {
+        font-size: 4.1rem;
+    }
+
+    .nav {
+        right: 1%;
+    }
+
+    .project {
+        .projectContent {
+            padding-bottom: 0;
+        }
+    }
+
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    .contactLink {
+        img {
+            display: none;
+        }
+    }
+
+    .contactForm button {
+        width: 100%;
     }
 }
