@@ -271,13 +271,17 @@ header {
   text-transform: uppercase;
   letter-spacing: 0.5rem; }
   .pageNav li {
-    padding: 15px 5px;
     background: white;
+    background: #FA7268;
     opacity: 0.8;
-    border-bottom: 1px solid black; }
+    border-bottom: 1px solid black;
+    -webkit-transition: 0.2s all;
+    -o-transition: 0.2s all;
+    transition: 0.2s all; }
   .pageNav a {
     text-decoration: none;
-    padding: 15px 5px 15px 30px;
+    display: block;
+    padding: 12px 10px 12px 30px;
     color: black;
     -webkit-transition: 0.2s all;
     -o-transition: 0.2s all;
@@ -285,6 +289,10 @@ header {
 
 .pageNav li:last-child {
   border-bottom: none; }
+
+.pageNav li:hover {
+  background: white;
+  color: #FA7268; }
 
 .pageNav a:hover {
   color: #FA7268; }

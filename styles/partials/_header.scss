@@ -90,15 +90,19 @@ header {
     text-transform: uppercase;
     letter-spacing: 0.5rem;
     li {
-        padding: 15px 5px;
+        // padding: 15px 5px;
         background: white;
+        background: $hoverColor;
         opacity: 0.8;
         border-bottom: 1px solid black;
+        transition: 0.2s all;
     }
     a {
         text-decoration: none;
+        display: block;
+        padding: 12px 10px 12px 30px;
         // padding: 50px;
-        padding: 15px 5px 15px 30px;
+        // padding: 15px 5px 15px 30px;
         color: black;
         transition: 0.2s all;
         // border: 1px solid red;
@@ -107,6 +111,11 @@ header {
 
 .pageNav li:last-child {
     border-bottom: none;
+}
+
+.pageNav li:hover {
+    background: white;
+    color: $hoverColor;
 }
 
 .pageNav a:hover {
