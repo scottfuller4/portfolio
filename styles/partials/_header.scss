@@ -4,6 +4,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 20px;
+    // background-attachment: fixed;
     // position: static;
     h1 {
         font-family: $bodyFont;
@@ -14,10 +15,6 @@ header {
         padding-top: 70px;
     }
 }
-
-// .headerContainer {
-//     position: relative;
-// }
 
 .social {
     position: fixed;
@@ -85,14 +82,11 @@ header {
 
 .pageNav {
     background: none;
-    // width: 150px;
     z-index: 100;
     text-transform: uppercase;
     letter-spacing: 0.5rem;
     li {
-        // padding: 15px 5px;
         background: white;
-        background: $hoverColor;
         opacity: 0.8;
         border-bottom: 1px solid black;
         transition: 0.2s all;
@@ -101,8 +95,6 @@ header {
         text-decoration: none;
         display: block;
         padding: 12px 10px 12px 30px;
-        // padding: 50px;
-        // padding: 15px 5px 15px 30px;
         color: black;
         transition: 0.2s all;
         // border: 1px solid red;
@@ -115,11 +107,12 @@ header {
 
 .pageNav li:hover {
     background: white;
-    color: $hoverColor;
+    background: $hoverColor;
+    // color: $hoverColor;
 }
 
 .pageNav a:hover {
-    color: $hoverColor;
+    // color: $hoverColor;
 }
 
 .menuHide {

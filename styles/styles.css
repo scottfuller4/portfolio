@@ -272,7 +272,6 @@ header {
   letter-spacing: 0.5rem; }
   .pageNav li {
     background: white;
-    background: #FA7268;
     opacity: 0.8;
     border-bottom: 1px solid black;
     -webkit-transition: 0.2s all;
@@ -292,10 +291,7 @@ header {
 
 .pageNav li:hover {
   background: white;
-  color: #FA7268; }
-
-.pageNav a:hover {
-  color: #FA7268; }
+  background: #FA7268; }
 
 .menuHide {
   display: none; }
