@@ -107,7 +107,6 @@ header {
         padding: 12px 10px 12px 30px;
         color: black;
         transition: 0.2s all;
-        // border: 1px solid red;
     }
 }
 
@@ -118,11 +117,6 @@ header {
 .pageNav li:hover {
     background: white;
     background: $hoverColor;
-    // color: $hoverColor;
-}
-
-.pageNav a:hover {
-    // color: $hoverColor;
 }
 
 .menuHide {
