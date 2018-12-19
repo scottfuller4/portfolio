@@ -308,6 +308,8 @@ header {
 
 .about {
   margin: 0; }
+  .about .wrapper {
+    position: relative; }
   .about h2 {
     text-align: right;
     z-index: 50;
