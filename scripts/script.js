@@ -6,6 +6,7 @@ $(function () {
 
 App.init = function () {
     App.menu();
+    App.menuClick();
     App.contact();
     App.scroll();
 };
@@ -15,6 +16,14 @@ App.menu = function () {
         $(".pageNav").toggleClass("menuHide");
         $(".hamburger").toggleClass("hidden");
         $(".close").toggleClass("hidden");
+    })
+}
+
+App.menuClick = function () {
+    $(".pageNav a").on("click", function () {
+        $(".pageNav").toggleClass("menuHide");
+        $(".close").toggleClass("hidden");
+        $(".hamburger").toggleClass("hidden");
     })
 }
 

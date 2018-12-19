@@ -41,6 +41,13 @@ footer {
     }
 }
 
+.socialFooter .socialLinks ul {
+    a:hover{
+        color: $hoverColor;
+    }
+}
+
+
 .hiddenFooter {
     display: none;
 }

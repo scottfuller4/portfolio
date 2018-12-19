@@ -9,7 +9,7 @@
         crossorigin='anonymous'>
     <link href="https://fonts.googleapis.com/css?family=Heebo|Playfair+Display:900" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link type="image/svg" href="./styles/assets/favicon.svg" rel="icon">
+    <link type="image/png" href="./styles/assets/icon.png" rel="icon">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Scott Fuller</title>
 </head>
@@ -17,7 +17,10 @@
 <body>
     <header id="home">
         <div class="wrapper headerContainer">
-            <h1 data-aos="zoom-out" data-aos-duration="1500">Scott Fuller</h1>
+            <div class="headerContent" data-aos="zoom-out" data-aos-duration="1500">
+                <h1>Scott Fuller</h1>
+                <h2>web developer</h2>
+            </div>
             <nav class="fixed" id="fixedNav">
                 <div class="hamburgerNav">
                     <img src="./styles/assets/hamburger.svg" alt="" class="hamburger">
@@ -34,7 +37,7 @@
                 </ul>
             </nav>
             <div class="social">
-                <h3>Follow me</h3>
+                <h3>Contact me</h3>
                 <div class="socialLinks">
                     <img src="./styles/assets/arrow.svg" alt="">
                     <ul>
@@ -56,6 +59,11 @@
                         <li>
                             <a href="https://www.instagram.com/scotti.boi/?hl=en" target="_blank">
                                 <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:scottfuller4@gmail.com">
+                                <i class="far fa-envelope"></i>
                             </a>
                         </li>
                     </ul>
@@ -102,7 +110,8 @@
                             <h3>Radflix</h3>
                             <h4>react / API / firebase / scss</h4>
                             <p>A react application using the MovieDB API that allows users to create custom groups to
-                                collaborate and store a list of their favourite movies. Made with Andy Ng and Matt
+                                collaborate and save a list of
+                                their favourite movies, using Firebase. Made in collaboration with Andy Ng and Matt
                                 Vinall.</p>
                             <div class="projectButtons">
                                 <a href="https://cinemacrew-300cf.firebaseapp.com/" class="button" target="_blank">view
@@ -222,12 +231,8 @@
                         <label for="email">Email</label>
                         <input type="email" required="true" id="email" name="email">
 
-                        <label for="subject">Subject</label>
-                        <input type="text" required="true" id="subject" name="subject">
-
                         <label for="message">Message</label>
-                        <textarea name="message" id="message" cols="30" rows="10" name="message" required="true"></textarea>
-                        <!-- <input type="text" required="true" id="message"> -->
+                        <textarea name="message" id="message" cols="30" rows="10" required="true"></textarea>
 
                         <button class="button">Submit</button>
                     </form>
@@ -238,7 +243,7 @@
     <footer>
         <div class="wrapper">
             <div class="socialFooter hiddenFooter">
-                <h3>Follow me</h3>
+                <h3>Contact me</h3>
                 <div class="socialLinks">
                     <!-- <img src="./styles/assets/arrow.svg" alt=""> -->
                     <ul>
@@ -260,6 +265,11 @@
                         <li>
                             <a href="https://www.instagram.com/scotti.boi/?hl=en" target="_blank">
                                 <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:scottfuller4@gmail.com">
+                                <i class="far fa-envelope"></i>
                             </a>
                         </li>
                     </ul>

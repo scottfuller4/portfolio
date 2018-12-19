@@ -80,9 +80,15 @@
 }
 
 @media (max-width: 776px) {
-    header h1 {
-        font-size: 6rem;
-    }
+    .headerContent {
+        padding-top: 50px;
+        h1 {
+            font-size: 7rem;
+        }
+        h2 {
+            font-size: 2.5rem;
+        }
+    } 
 }
 
 @media (max-width: 700px) {
@@ -199,10 +205,21 @@
     }
 }
 
+@media (max-width: 525px) {
+    .headerContent {
+        padding-top: 30px;
+        h1 {
+            font-size: 5rem;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+    } 
+}
+
 @media (max-width: 450px) {
-    header h1 {
-        font-size: 4.1rem;
-    }
+    
 
     .nav {
         right: 1%;

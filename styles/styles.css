@@ -203,13 +203,21 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 20px; }
-  header h1 {
-    font-family: "Heebo", sans-serif;
-    text-transform: uppercase;
-    font-size: 8rem;
-    letter-spacing: 0.8rem;
+
+.headerContent {
+  text-align: center;
+  padding-top: 70px; }
+  .headerContent h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 11rem;
+    letter-spacing: 0.5rem;
     text-align: center;
-    padding-top: 70px; }
+    line-height: 1.2; }
+  .headerContent h2 {
+    font-family: "Heebo", sans-serif;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase; }
 
 .social {
   position: fixed;
@@ -221,14 +229,15 @@ header {
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
     position: relative;
-    left: -68px;
+    left: -77px;
     font-size: 1.4rem;
     letter-spacing: 0.8rem;
     font-family: "Heebo", sans-serif;
     text-transform: uppercase; }
 
 .socialLinks {
-  margin-top: 75px; }
+  margin-top: 75px;
+  z-index: 60; }
   .socialLinks img {
     width: 8rem;
     position: relative;
@@ -244,7 +253,8 @@ header {
       color: black;
       -webkit-transition: 0.2s all;
       -o-transition: 0.2s all;
-      transition: 0.2s all; }
+      transition: 0.2s all;
+      z-index: 100; }
     .socialLinks ul li i {
       font-size: 1.4rem; }
 
@@ -297,8 +307,7 @@ header {
   display: none; }
 
 .about {
-  margin: 0;
-  position: relative; }
+  margin: 0; }
   .about h2 {
     text-align: right;
     z-index: 50;
@@ -328,7 +337,7 @@ header {
 
 .whiteSpace {
   height: 50px;
-  width: 85%;
+  width: 100%;
   position: absolute;
   top: -50px;
   background: white;
@@ -476,6 +485,9 @@ footer p {
     .socialFooter .socialLinks ul li i {
       font-size: 1.4rem; }
 
+.socialFooter .socialLinks ul a:hover {
+  color: #FA7268; }
+
 .hiddenFooter {
   display: none; }
 
@@ -596,8 +608,12 @@ footer p {
     width: 100%; } }
 
 @media (max-width: 776px) {
-  header h1 {
-    font-size: 6rem; } }
+  .headerContent {
+    padding-top: 50px; }
+    .headerContent h1 {
+      font-size: 7rem; }
+    .headerContent h2 {
+      font-size: 2.5rem; } }
 
 @media (max-width: 700px) {
   header {
@@ -667,9 +683,16 @@ footer p {
   .contactLink {
     margin-bottom: 50px; } }
 
+@media (max-width: 525px) {
+  .headerContent {
+    padding-top: 30px; }
+    .headerContent h1 {
+      font-size: 5rem;
+      margin-bottom: 10px; }
+    .headerContent h2 {
+      font-size: 2rem; } }
+
 @media (max-width: 450px) {
-  header h1 {
-    font-size: 4.1rem; }
   .nav {
     right: 1%; }
   .project .projectContent {
